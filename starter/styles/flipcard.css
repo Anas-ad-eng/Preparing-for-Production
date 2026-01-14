@@ -15,12 +15,12 @@
   align-items: center;
 }
 
- .cardSets:hover {
+.cardSets:hover {
   border-color: black;
 }
 
 /* Flip Card Styling */
- .cardContainer {
+.cardContainer {
   background-color: transparent;
   width: 500px;
   height: 380px;
@@ -30,7 +30,7 @@
   align-items: center;
 }
 
- div.innerCard {
+div.innerCard {
   position: relative;
   width: 100%;
   height: 100%;
@@ -62,14 +62,14 @@
   font-size: 2rem;
 }
 
- .description {
+.description {
   font-size: 1.5rem;
   background-color: #dce7e8;
   transform: rotateY(180deg);
 }
 
 /* Page and Container Layout */
- .cardPageContainer {
+.cardPageContainer {
   width: 500px;
   display: flex;
   flex-direction: column;

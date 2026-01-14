@@ -7,9 +7,9 @@ export default [
       sourceType: "module",
     },
     rules: {
-      "no-var": "error",          // يمنع استخدام var
-      "semi": ["error", "always"], // يجبر على الفاصلة المنقوطة
-      "no-unused-vars": "warn",    // يحذر من المتغيرات غير المستخدمة
+      "no-var": "error", // يمنع استخدام var
+      semi: ["error", "always"], // يجبر على الفاصلة المنقوطة
+      "no-unused-vars": "warn", // يحذر من المتغيرات غير المستخدمة
     },
   },
 ];

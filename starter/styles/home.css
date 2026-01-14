@@ -10,12 +10,14 @@
 }
 
 /* Image Styling */
-.homeContainer img {
+/* استخدم المسار المباشر لضمان وصول التنسيق للصورة */
+div.homeContainer img {
+  display: block !important; /* لضمان الأولوية */
   width: 100%;
-  max-width: 600px;
+  max-width: 450px;
   height: auto;
-  margin-top: 20px;
-  filter: brightness(70%);
+  margin: 20px auto; /* توسيط الصورة */
+  border-radius: 8px;
 }
 
 /* Header and Subheader Styling */
