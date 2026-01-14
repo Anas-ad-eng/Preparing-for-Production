@@ -1,0 +1,29 @@
+# Node modules
+node_modules/
+
+# Build output
+dist/
+.cache/
+.parcel-cache/
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# OS-specific files
+.DS_Store
+Thumbs.db
+
+# Environment variables
+.env
+
+# Optional editor files
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# Cypress screenshots and videos (optional)
+cypress/screenshots/
+cypress/videos/

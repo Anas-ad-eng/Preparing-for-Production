@@ -1,0 +1,22 @@
+{
+  "name": "study-night",
+  "version": "1.0.0",
+  "description": "Study Night flashcards app",
+  "license": "MIT",
+  "type": "module",
+  "scripts": {
+    "gulp": "gulp"
+  },
+  "devDependencies": {
+    "chai": "^6.2.2",
+    "cypress": "^15.9.0",
+    "eslint": "^9.39.2",
+    "gulp": "^5.0.1",
+    "gulp-cli": "^3.1.0",
+    "gulp-shell": "^0.8.0",
+    "mocha": "^11.7.5",
+    "parcel": "^2.16.3",
+    "prettier": "^3.7.4"
+  }
+}
+

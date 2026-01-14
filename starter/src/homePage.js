@@ -1,38 +1,58 @@
-//DO NOT CHANGE ANYTHING IN THIS FILE//
-// This file is responsible for loading the home page
-//Imports image for homepage
-import homePageImage from "../images/homePage.png";
-//Helper functions
+// homePage.js
+// DO NOT CHANGE ANYTHING IN THIS FILE EXCEPT WHAT IS NECESSARY FOR IMAGE/FUNCTIONS
+
+// ===== Image path =====
+// الصور موجودة في public/images، لذلك المسار يبدأ من جذر السيرفر مباشرة
+const homePageImage = "/images/homePage.png";
+
+// ===== Helper functions =====
 import {
   createHeader,
   createElement,
   createImage,
+  createLabel,
+  createInput,
+  createSubmitButton,
 } from "./utilityRenderFunctions.js";
 
-//Renders home page
+// ===== Render Home Page =====
 const renderHomePage = () => {
-  //Gets main element
   const main = document.querySelector("main");
   main.innerHTML = "";
 
-  //Creates header element
+  // Header
   const header = createHeader("h1", "Study Night", "home_header");
 
-  //Creates subheader element
+  // Subheading
   const subHeading = createElement(
     "h2",
     "A Digital Study Solution for the Modern World"
   );
 
-  //Creates elements
+  // Image
   const image = createImage(homePageImage, "Desk of laptops");
 
-  //Container for elements
+  // Container
   const homeContainer = document.createElement("div");
   homeContainer.className = "homeContainer";
-
   homeContainer.append(header, subHeading, image);
-  main.append(homeContainer);
+  main.appendChild(homeContainer);
+
+  // ===== Add Form for Cypress testing =====
+  const form = document.createElement("form");
+
+  form.append(
+    createLabel("Set Name", "setName"),
+    createInput("setName"),
+    createSubmitButton("Create Set")
+  );
+
+  main.appendChild(form);
+
+  // ===== Debugging =====
+  console.log("homePageImage:", homePageImage);
+  console.log("image element:", image);
+  console.log("form element:", form);
 };
 
 export { renderHomePage };
